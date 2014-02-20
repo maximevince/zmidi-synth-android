@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.tass.zmidisynth.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:text="TASS Belgium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddress"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="tcp://192.168.0.158:1234/"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/tass_logo" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtIncoming"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="Received messages:" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to keyboard!"
+        android:id="@+id/btnConnect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>
